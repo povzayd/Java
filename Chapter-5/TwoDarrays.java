@@ -1,5 +1,5 @@
 import java.util.Scanner ; 
-public class If{
+public class TwoDarrays{
 	static Scanner scanner = new Scanner(System.in);
 	static void print(Object msg){
 		System.out.print(msg);
@@ -9,15 +9,16 @@ public class If{
 		return scanner.nextLine().trim();
 	}
 	public static void main(String[] args){
-		int age =-32;
-		if(age>=18){
-			print("Eligible.");
+		String[][] cars = {
+			{"Defender","Autobiography","Velar"},
+			{"KTM","Ninja","H2R"},
+			{"G63","Fortuner","Hector"}
+		};
+		for(int i=0; i<cars.length; i++){
+			print("");
+			for(int j=0; j<cars[i].length; j++){
+				print(cars[i][j]+"\n");
+			} 
 		}
-		else if(age>=0){
-			print("Invalid Age.");
-		}
-		else{
-			print("Not Eligible.");
-		}		
 	}
 }

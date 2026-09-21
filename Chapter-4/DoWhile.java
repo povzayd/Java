@@ -1,5 +1,5 @@
 import java.util.Scanner ; 
-public class If{
+public class DoWhile{
 	static Scanner scanner = new Scanner(System.in);
 	static void print(Object msg){
 		System.out.print(msg);
@@ -9,15 +9,11 @@ public class If{
 		return scanner.nextLine().trim();
 	}
 	public static void main(String[] args){
-		int age =-32;
-		if(age>=18){
-			print("Eligible.");
+		String name = "";
+		do{
+			name = input("Enter Your Name: ");
 		}
-		else if(age>=0){
-			print("Invalid Age.");
-		}
-		else{
-			print("Not Eligible.");
-		}		
+		while(name.isBlank());
+		print("Hello, "+name);
 	}
 }

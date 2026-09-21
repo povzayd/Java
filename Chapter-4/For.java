@@ -1,5 +1,5 @@
 import java.util.Scanner ; 
-public class If{
+public class For{
 	static Scanner scanner = new Scanner(System.in);
 	static void print(Object msg){
 		System.out.print(msg);
@@ -9,15 +9,12 @@ public class If{
 		return scanner.nextLine().trim();
 	}
 	public static void main(String[] args){
-		int age =-32;
-		if(age>=18){
-			print("Eligible.");
+		int x = 0;
+		for(int i=0; i <= 20; i++){
+			print(i+"\n");
 		}
-		else if(age>=0){
-			print("Invalid Age.");
+		for(int i=20; i >= 0; i--){
+			print(i+"\n");
 		}
-		else{
-			print("Not Eligible.");
-		}		
 	}
 }
